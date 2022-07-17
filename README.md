@@ -1,6 +1,9 @@
 Sorting Visualiser
+
 This is a visualization project made using javascript 
+
 Algorithm shown are:-
+
 - Bubble Sort 
 - Selection Sort
 - Insertion Sort
