@@ -1,4 +1,4 @@
-Sorting Visualiser
+Sorting Visualizer
 
 This is a visualization project made using javascript 
 
