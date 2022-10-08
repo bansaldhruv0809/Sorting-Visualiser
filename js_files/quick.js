@@ -7,7 +7,7 @@ async function partitionLomuto(ele, l, r){
     for(let j = l; j <= r - 1; j++){
         console.log('In partitionLomuto for j');
         // color current element
-        ele[j].style.background = 'yellow';
+        ele[j].style.background = '#198754';
         // pauseChamp
         await waitforme(delay);
 
@@ -56,8 +56,8 @@ async function quickSort(ele, l, r){
     }
     else{
         if(l >= 0 && r >= 0 && l <ele.length && r <ele.length){
-            ele[r].style.background = '#198754';
-            ele[l].style.background = '#198754';
+            ele[r].style.background = '#0d6efd';
+            ele[l].style.background = '#0d6efd';
         }
     }
 }
