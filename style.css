@@ -4,8 +4,26 @@ body {
     padding: 0 20px 30px 0;
     line-height: 1.4;
 }
+p{
+    display: inline;
+}
+.blue{
+    color: #0d6efd;
+}
+.red{
+    color: #dc3545;
+}
+.yellow{
+    color: #ffc107;
+}
+.green{
+    color: #198754;
+}
+.orange{
+    color: orange;
+}
 .flex-container{
-    margin-top: 20px;
+    margin-top: 60px;
     display: flex;
     flex-wrap: nowrap;
     width: 100%;
@@ -15,14 +33,15 @@ body {
 }
 
 .flex-item{
-    background: cyan;
-    border: 1pt solid black;
+    background: #ffc107;
+    border: 1pt solid rgb(0, 0, 0);
     width: 10px;
     transition: 0.1s all ease;
 }
 
 .row{
     display: grid;
+    margin-top: 30px;
     grid-template-columns: 1fr 1fr 2fr;
 }
 
@@ -30,4 +49,7 @@ body {
     display: flex;
     padding: 10px;
     justify-content: space-around;
+}
+#size{
+    padding-right: 10px;
 }
