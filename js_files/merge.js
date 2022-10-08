@@ -13,7 +13,7 @@ async function merge(ele, low, mid, high){
         console.log('In merge left loop');
         console.log(ele[low + i].style.height + ' at ' + (low+i));
         // color
-        ele[low + i].style.background = 'orange';
+        ele[low + i].style.background = '#0d6efd';
         left[i] = ele[low + i].style.height;
     }
     for(let i = 0; i < n2; i++){
@@ -21,7 +21,7 @@ async function merge(ele, low, mid, high){
         console.log('In merge right loop');
         console.log(ele[mid + 1 + i].style.height + ' at ' + (mid+1+i));
         // color
-        ele[mid + 1 + i].style.background = 'yellow';
+        ele[mid + 1 + i].style.background = '#ffc107';
         right[i] = ele[mid + 1 + i].style.height;
     }
     await waitforme(delay);
@@ -37,7 +37,7 @@ async function merge(ele, low, mid, high){
             console.log('In merge while loop if');
             // color
             if((n1 + n2) === ele.length){
-                ele[k].style.background = '#198754';
+                ele[k].style.background = '#ffc107';
             }
             else{
                 ele[k].style.background = '#dc3545';
@@ -51,7 +51,7 @@ async function merge(ele, low, mid, high){
             console.log('In merge while loop else');
             // color
             if((n1 + n2) === ele.length){
-                ele[k].style.background = '#198754';
+                ele[k].style.background = '#ffc107';
             }
             else{
                 ele[k].style.background = '#dc3545';
@@ -66,7 +66,7 @@ async function merge(ele, low, mid, high){
         console.log("In while if n1 is left");
         // color
         if((n1 + n2) === ele.length){
-            ele[k].style.background = '#198754';
+            ele[k].style.background = '#ffc107';
         }
         else{
             ele[k].style.background = '#dc3545';
@@ -80,7 +80,7 @@ async function merge(ele, low, mid, high){
         console.log("In while if n2 is left");
         // color
         if((n1 + n2) === ele.length){
-            ele[k].style.background = '#198754';
+            ele[k].style.background = '#ffc107';
         }
         else{
             ele[k].style.background = '#dc3545';
