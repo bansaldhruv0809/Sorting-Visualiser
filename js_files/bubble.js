@@ -15,9 +15,9 @@ async function bubble() {
             ele[j].style.background = '#dc3545';
             ele[j+1].style.background = '#dc3545';
         }
-        ele[ele.length-1-i].style.background = '#198754';
+        ele[ele.length-1-i].style.background = '#ffc107';
     }
-    ele[0].style.background = '#198754';
+    ele[0].style.background = '#ffc107';
 }
 
 const bubSortbtn = document.querySelector(".bubbleSort");
