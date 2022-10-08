@@ -41,7 +41,7 @@ p{
 
 .row{
     display: grid;
-    margin-top: 30px;
+    margin-top: 40px;
     grid-template-columns: 1fr 1fr 2fr;
 }
 
