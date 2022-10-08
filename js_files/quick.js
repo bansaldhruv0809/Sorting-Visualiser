@@ -3,7 +3,7 @@ async function partitionLomuto(ele, l, r){
     console.log('In partitionLomuto()');
     let i = l - 1;
     // color pivot element
-    ele[r].style.background = 'red';
+    ele[r].style.background = 'white';
     for(let j = l; j <= r - 1; j++){
         console.log('In partitionLomuto for j');
         // color current element
@@ -16,14 +16,14 @@ async function partitionLomuto(ele, l, r){
             i++;
             swap(ele[i], ele[j]);
             // color 
-            ele[i].style.background = 'orange';
-            if(i != j) ele[j].style.background = 'orange';
+            ele[i].style.background = '#0d6efd';
+            if(i != j) ele[j].style.background = '#0d6efd';
             // pauseChamp
             await waitforme(delay);
         }
         else{
             // color if not less than pivot
-            ele[j].style.background = 'pink';
+            ele[j].style.background = '#dc3545';
         }
     }
     i++; 
@@ -32,16 +32,16 @@ async function partitionLomuto(ele, l, r){
     swap(ele[i], ele[r]); // pivot height one
     console.log(`i = ${i}`, typeof(i));
     // color
-    ele[r].style.background = 'pink';
-    ele[i].style.background = 'green';
+    ele[r].style.background = '#dc3545';
+    ele[i].style.background = '#198754';
 
     // pauseChamp
     await waitforme(delay);
     
     // color
     for(let k = 0; k < ele.length; k++){
-        if(ele[k].style.background != 'green')
-            ele[k].style.background = 'cyan';
+        if(ele[k].style.background != '#198754')
+            ele[k].style.background = '#0d6efd';
     }
 
     return i;
@@ -56,8 +56,8 @@ async function quickSort(ele, l, r){
     }
     else{
         if(l >= 0 && r >= 0 && l <ele.length && r <ele.length){
-            ele[r].style.background = 'green';
-            ele[l].style.background = 'green';
+            ele[r].style.background = '#198754';
+            ele[l].style.background = '#198754';
         }
     }
 }
@@ -70,9 +70,9 @@ quickSortbtn.addEventListener('click', async function(){
     let r = ele.length - 1;
     disableSortingBtn();
     disableSizeSlider();
-    disableNewArrayBtn();
+    //disableNewArrayBtn();
     await quickSort(ele, l, r);
     enableSortingBtn();
     enableSizeSlider();
-    enableNewArrayBtn();
+    //enableNewArrayBtn();
 });
