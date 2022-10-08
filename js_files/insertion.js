@@ -8,14 +8,14 @@ async function insertion(){
         let j = i - 1;
         let key = ele[i].style.height;
         // color
-        ele[i].style.background = '#0d6efd';
+        ele[i].style.background = '#dc3545';
 
         await waitforme(delay);
 
         while(j >= 0 && (parseInt(ele[j].style.height) > parseInt(key))){
             console.log('In while loop');
             // color
-            ele[j].style.background = '#0d6efd';
+            ele[j].style.background = '#dc3545';
             ele[j + 1].style.height = ele[j].style.height;
             j--;
 
