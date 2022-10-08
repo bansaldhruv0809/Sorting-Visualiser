@@ -30,7 +30,7 @@ async function selection(){
         // change the min element index back to normal as it is swapped 
         ele[min_index].style.background = '#0d6efd';
         // change the sorted elements color to green
-        ele[i].style.background = '#198754';
+        ele[i].style.background = '#ffc107';
     }
 }
 
